@@ -4,7 +4,8 @@ import SwiftUI
 struct DataFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountView()
+                .environmentObject(Profile())
         }
     }
 }
